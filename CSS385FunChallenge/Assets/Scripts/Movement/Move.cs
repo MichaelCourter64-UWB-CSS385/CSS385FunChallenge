@@ -9,6 +9,7 @@ public class Move : MonoBehaviour
     public float forwardForce = 10f;
     public float upwardForce = 30f;
     public float rayPercent = 1f;
+    public float xVelocityLimit;
 
     CircleCollider2D collider;
 
@@ -25,14 +26,18 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(transform.right* forwardForce * Time.deltaTime);
+        if (rb.velocity.x <= xVelocityLimit)
+        {
+            rb.AddForce(transform.right * forwardForce * Time.deltaTime);
+        }
+
         if(Input.GetKey("space"))
         {
             Vector2 rayOrigin = new Vector2(transform.position.x, transform.position.y - collider.radius - 0.05f);
 
             RaycastHit2D rayResult = Physics2D.Raycast(rayOrigin, new Vector2(0, -1), collider.radius * rayPercent);
 
-            Debug.Log(rayResult.transform);
+            //Debug.Log(rayResult.transform);
 
             if(!isJumping && rayResult.transform != null)
             {
@@ -46,8 +51,10 @@ public class Move : MonoBehaviour
     {
         if (isJumping)
         {
-            Debug.Log("Jumped: " + transform.up * upwardForce);
+            //Debug.Log("Jumped: " + transform.up * upwardForce);
             rb.AddForce(transform.up * upwardForce * Time.deltaTime);
+            
+            Debug.Log(GetComponent<Rigidbody2D>().velocity);
 
             isJumping = false;
         }
