@@ -53,6 +53,7 @@ public class Move : MonoBehaviour
         if (isJumping)
         {
             //Debug.Log("Jumped: " + transform.up * upwardForce);
+            rb.velocity = new Vector2(rb.velocity.x, 0);
             rb.AddForce(transform.up * upwardForce * Time.deltaTime);
             
 //            Debug.Log(GetComponent<Rigidbody2D>().velocity);
