@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CalmLevel.unity
+    guid: 30f37d66fd99fc246a3658485c0dce23
+  - enabled: 1
+    path: Assets/Scenes/AnticipationLevel.unity
+    guid: 5b790e2a2b96bbd45ba814bf1b801110
+  - enabled: 1
+    path: Assets/Scenes/PressureLevel.unity
+    guid: f489e034d1360264891785bce06e158a

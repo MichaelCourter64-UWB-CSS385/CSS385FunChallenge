@@ -45,7 +45,7 @@ public class Move : MonoBehaviour
             }
             
         }
-        Debug.Log(GetComponent<Rigidbody2D>().velocity);
+//        Debug.Log(GetComponent<Rigidbody2D>().velocity);
     }
 
     void FixedUpdate()
