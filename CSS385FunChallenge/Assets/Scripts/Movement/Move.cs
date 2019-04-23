@@ -30,14 +30,15 @@ public class Move : MonoBehaviour
 
             RaycastHit2D rayResult = Physics2D.Raycast(rayOrigin, new Vector2(0, -1), collider.radius * rayPercent);
 
-            Debug.Log(rayResult.transform);
+            //Debug.Log(rayResult.transform);
 
             if(rayResult.transform != null)
             {
-                Debug.Log("Jumped: " + transform.up * upwardForce * Time.deltaTime);
+                //Debug.Log("Jumped: " + transform.up * upwardForce * Time.deltaTime);
                 rb.AddForce(transform.up * upwardForce * Time.deltaTime);
             }
             
         }
+        Debug.Log(GetComponent<Rigidbody2D>().velocity);
     }
 }
