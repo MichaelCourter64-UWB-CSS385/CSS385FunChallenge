@@ -12,6 +12,8 @@ public class Move : MonoBehaviour
 
     CircleCollider2D collider;
 
+    bool isJumping = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,12 +34,22 @@ public class Move : MonoBehaviour
 
             Debug.Log(rayResult.transform);
 
-            if(rayResult.transform != null)
+            if(!isJumping && rayResult.transform != null)
             {
-                Debug.Log("Jumped: " + transform.up * upwardForce * Time.deltaTime);
-                rb.AddForce(transform.up * upwardForce * Time.deltaTime);
+                isJumping = true;
             }
             
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (isJumping)
+        {
+            Debug.Log("Jumped: " + transform.up * upwardForce);
+            rb.AddForce(transform.up * upwardForce * Time.deltaTime);
+
+            isJumping = false;
         }
     }
 }
