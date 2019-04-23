@@ -10,6 +10,7 @@ public class Door : MonoBehaviour
     public string goToTheScene;
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.transform);
         if(other.CompareTag("Player"))
         {
             SceneManager.LoadScene(goToTheScene);
