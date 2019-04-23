@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardForce: 100
-  upwardForce: 5000
-  rayPercent: 0.25
+  upwardForce: 17000
+  rayPercent: 0.01
 --- !u!212 &212008523246338660
 SpriteRenderer:
   m_ObjectHideFlags: 1
