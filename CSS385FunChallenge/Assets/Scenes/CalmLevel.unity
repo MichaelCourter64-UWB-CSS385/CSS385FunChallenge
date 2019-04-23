@@ -782,6 +782,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114692373216709822, guid: 270071fda623f3a4ca7c8b23e9a5c0a7,
+        type: 2}
+      propertyPath: goToTheScene
+      value: AnticipationLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 270071fda623f3a4ca7c8b23e9a5c0a7, type: 2}
   m_IsPrefabParent: 0
