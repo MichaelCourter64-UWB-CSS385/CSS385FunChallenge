@@ -258,12 +258,12 @@ Prefab:
     - target: {fileID: 114219463579524950, guid: 19266f60a4460d84393edf761553710f,
         type: 2}
       propertyPath: upwardForce
-      value: 6500
+      value: 11500
       objectReference: {fileID: 0}
     - target: {fileID: 114219463579524950, guid: 19266f60a4460d84393edf761553710f,
         type: 2}
       propertyPath: xVelocityLimit
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1887263525197984, guid: 19266f60a4460d84393edf761553710f, type: 2}
       propertyPath: m_TagString
@@ -272,17 +272,22 @@ Prefab:
     - target: {fileID: 212008523246338660, guid: 19266f60a4460d84393edf761553710f,
         type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212008523246338660, guid: 19266f60a4460d84393edf761553710f,
         type: 2}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212008523246338660, guid: 19266f60a4460d84393edf761553710f,
         type: 2}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219463579524950, guid: 19266f60a4460d84393edf761553710f,
+        type: 2}
+      propertyPath: forwardForce
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19266f60a4460d84393edf761553710f, type: 2}
