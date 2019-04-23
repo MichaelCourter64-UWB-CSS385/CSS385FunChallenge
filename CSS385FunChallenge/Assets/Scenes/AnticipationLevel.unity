@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b166ec3edb8c6fc4291a474ee235ee71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leader: {fileID: 0}
+  leader: {fileID: 1449501159}
 --- !u!1 &1308984177
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: a675ba29b4be0664bb2a6664cb942a64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -319,11 +319,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4369123437905776, guid: 19266f60a4460d84393edf761553710f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.53
       objectReference: {fileID: 0}
     - target: {fileID: 4369123437905776, guid: 19266f60a4460d84393edf761553710f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 4369123437905776, guid: 19266f60a4460d84393edf761553710f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -349,19 +349,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 212008523246338660, guid: 19266f60a4460d84393edf761553710f,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 212008523246338660, guid: 19266f60a4460d84393edf761553710f,
-        type: 2}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19266f60a4460d84393edf761553710f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1449501159 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1887263525197984, guid: 19266f60a4460d84393edf761553710f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1382128062}
 --- !u!1001 &1636009967
 Prefab:
   m_ObjectHideFlags: 0
@@ -371,11 +366,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4962578930553858, guid: 15391b7061342db4294dde8ccfbca91c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.389
       objectReference: {fileID: 0}
     - target: {fileID: 4962578930553858, guid: 15391b7061342db4294dde8ccfbca91c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.71
       objectReference: {fileID: 0}
     - target: {fileID: 4962578930553858, guid: 15391b7061342db4294dde8ccfbca91c, type: 2}
       propertyPath: m_LocalPosition.z
